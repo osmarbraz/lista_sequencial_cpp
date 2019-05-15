@@ -9,6 +9,7 @@
 
 using namespace std;
 
+//Declaração dos métodos
 int leitura();
 bool inserirInicio(int lista[], int valor, int &n);
 bool inserirPosicao(int lista[], int k, int valor, int &n);
