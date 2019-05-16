@@ -37,7 +37,7 @@ const int TAMANHO_LISTA = 100;
  * @return O valor lido.
  */
 int leitura() {
-    cout << endl << "Digite um valor: ";
+    cout << "\nDigite um valor: ";
     int valor = 0;
     cin >> valor;
     return valor;
