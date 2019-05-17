@@ -3,6 +3,7 @@
  *
  */
 
+//Declaração de bibliotecas
 #include <cstdlib>
 #include <iostream>
 #include <string>
