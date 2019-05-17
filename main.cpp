@@ -376,12 +376,12 @@ int main() {
                 << "Selecione a opção desejada:\n"
                 << " 1- Listar Nós\n"
                 << " 2- Inserir Nó no início\n"
-                << " 3- Inserir Nó no fim\n"
-                << " 4- Inserir Nó em uma posição especifica\n"
+                << " 3- Inserir Nó em uma posição especifica\n"
+                << " 4- Inserir Nó no fim\n"                
                 << " 5- Inserir Nó ordenado\n"
                 << " 6- Remover Nó do início\n"
-                << " 7- Remover Nó do fim\n"
-                << " 8- Remover Nó de uma posição específica\n"
+                << " 7- Remover Nó de uma posição específica\n"
+                << " 8- Remover Nó do fim\n"                
                 << " 9- Remover Nó pelo valor\n"
                 << "10- Procurar o dado de uma posição específica\n"
                 << "11- Procurar a posição de um dado\n"
@@ -412,18 +412,7 @@ int main() {
                 }
                 break;
             }
-            case 3:
-            {
-                //Preenche o valor do dado
-                int dado = leitura();
-                if (inserirFim(lista, dado, n) == true) {
-                    cout << "\nNó inserido no fim com Sucesso!" << endl;
-                } else {
-                    cout << "\nNó não inserido no fim!" << endl;
-                }
-                break;
-            }
-            case 4:
+              case 4:
             {
                 int k;
                 cout << "\nDigite a posição a ser inserido:";
@@ -437,6 +426,18 @@ int main() {
                 }
                 break;
             }
+            case 4:
+            {
+                //Preenche o valor do dado
+                int dado = leitura();
+                if (inserirFim(lista, dado, n) == true) {
+                    cout << "\nNó inserido no fim com Sucesso!" << endl;
+                } else {
+                    cout << "\nNó não inserido no fim!" << endl;
+                }
+                break;
+            }
+          
             case 5:
             {
                 //Preenche o valor do dado
@@ -457,16 +458,7 @@ int main() {
                 }
                 break;
             }
-            case 7:
-            {
-                if (excluirFim(lista, n)) {
-                    cout << "\nO Nó da fim foi excluído com Sucesso!" << endl;
-                } else {
-                    cout << "\nNó do fim não foi excluído!" << endl;
-                }
-                break;
-            }
-            case 8:
+             case 7:
             {
                 int k;
                 cout << "\nDigite a posição a ser excluída:";
@@ -478,6 +470,16 @@ int main() {
                 }
                 break;
             }
+            case 8:
+            {
+                if (excluirFim(lista, n)) {
+                    cout << "\nO Nó da fim foi excluído com Sucesso!" << endl;
+                } else {
+                    cout << "\nNó do fim não foi excluído!" << endl;
+                }
+                break;
+            }
+           
             case 9:
             {
                 //Preenche o valor do dado                 
@@ -528,7 +530,7 @@ int main() {
                 cout << "\nLista está vazia : " << estaVazia(n) << endl;
                 break;
             }
-        }//Fim Switch
-    }//Fim While
+        }//Fim switch
+    }//Fim while
     return 0;
-}
+}//Fim main
