@@ -356,7 +356,13 @@ int getQuantidade(int n) {
     return n;
 }
 
-int main() {
+/**
+ * Programa principal.
+ *
+ * @param argc
+ * @param argv
+ */
+int main(int argc, char** argv) {
     /**
      * Declaração da lista
      */
@@ -528,6 +534,18 @@ int main() {
             case 14:
             {
                 cout << "\nLista está vazia : " << estaVazia(n) << endl;
+                break;
+            }
+            //Opção de saída do programa
+            case 99:
+            {
+                cout << "\nSaindo do programa!";
+                break;
+            }
+                //Opção inválida do menu
+            default:
+            {
+                cout << "\nOpção inválida!";
                 break;
             }
         }//Fim switch
