@@ -397,6 +397,7 @@ int main(int argc, char** argv) {
                 << "99- Sair\n"
                 << " Opcao:";
         cin >> opcao;
+        //Verifica a opção
         switch (opcao) {
             case 1:
             {
