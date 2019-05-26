@@ -54,7 +54,7 @@ int leitura() {
  */
 bool inserirInicio(int lista[], int valor, int &n) {
     if (n < TAMANHO_LISTA) {
-        //Desloca os Nós do fim até a posição 0
+        //Desloca os Nós do fim até a posição 0.
         for (int i = n; i >= 0; i--) {
             lista[i + 1] = lista[i];
         }
@@ -243,7 +243,7 @@ bool excluirValor(int lista[], int valor, int &n) {
         while ((j < n) && (valor != lista[j])) {
             j = j + 1;
         }
-        //Verifica se a posição esta dentro do intervalo da lista
+        //Verifica se a posição esta dentro do intervalo da lista.
         if (j < n) {
             //Desloca os Nós do fim até a posição j da lista.
             for (int i = j; i < n; i++) {
@@ -267,12 +267,12 @@ bool excluirValor(int lista[], int valor, int &n) {
  *
  * @param lista Lista dos Nós.
  * @param k Posição do nó a ser consultado na lista.
- * @param n Quantidade de elementos da lista. *  
+ * @param n Quantidade de elementos da lista.
  * @return A posição de valor na lsita.
  */
 int procurarPosicao(int lista[], int k, int &n) {
     if (n != 0) {
-        //Verifica se a posição esta dentro do intervalo da lista
+        //Verifica se a posição esta dentro do intervalo da lista.
         if ((k >= 0) && (k < n)) {
             return lista[k];
         } else {
@@ -290,7 +290,7 @@ int procurarPosicao(int lista[], int k, int &n) {
  *
  * @param lista Lista dos Nós.
  * @param valor Valor a ser procurado na lista.
- * @param n Quantidade de elementos da lista. *   
+ * @param n Quantidade de elementos da lista.
  * @return A posição de valor na lsita.
  */
 int procurarValor(int lista[], int valor, int &n) {
@@ -301,7 +301,7 @@ int procurarValor(int lista[], int valor, int &n) {
         while ((i < n) && (valor != lista[i])) {
             i = i + 1;
         }
-        //Verifica se a posição esta dentro do intervalo da lista
+        //Verifica se a posição esta dentro do intervalo da lista.
         if (i < n) {
             return i;
         } else {
