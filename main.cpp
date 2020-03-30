@@ -419,7 +419,7 @@ int main(int argc, char** argv) {
                 }
                 break;
             }
-              case 4:
+             case 3:
             {
                 int k;
                 cout << "\nDigite a posição a ser inserido:";
